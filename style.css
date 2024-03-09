@@ -92,6 +92,34 @@ main.row {
 }
 
 
+a:hover {
+    background-color: var(--blue-dark);
+    animation: spin 1s infinite linear;
+
+}
+
+h1:hover {
+    animation: bounce 1s infinite linear;
+}
+
+@keyframes spin {
+    0$ {
+        transform: rotate(0deg);
+        color: var(--blue-lighter)
+    }
+
+    50% {
+        color: var(--blue-darker)
+    }
+
+    100% {
+        transform: rotate(360deg);
+        color: var(--blue-lighter)
+    }
+    
+    
+}
+
  /* Desktop styling goes here */
 
  @media screen and (min-width: 500px) {
